@@ -1,10 +1,10 @@
 import "./StudentProfile.css";
 
-const StuedentProfile = (props) =>
+const StuedentProfile = ({name, imgSrc, description}) =>
 
     <div className="student-card">
         <div className="student-title">
-            <h2>{props.name}</h2>
+            <h2>{name}</h2>
         </div>
         <div className="student-picture">
             <img src="https://tse3.mm.bing.net/th/id/OIP.B8yX4bQ6QjJ0uQ6TUj9iMgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" 
@@ -13,7 +13,7 @@ const StuedentProfile = (props) =>
             />
         </div>
         <div className="student-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum laboriosam dolorum, dolores blanditiis dignissimos eveniet magni adipisci et iste natus molestiae similique deleniti est tempore nobis praesentium voluptatem corrupti!
+            <p>{description}</p>
         </div>
 
     </div>

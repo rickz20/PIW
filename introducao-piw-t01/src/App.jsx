@@ -4,11 +4,15 @@ import StuedentProfile from "./components/sutdentProfile";
 const App = () => 
 <div className="container">
   <StuedentProfile
-  name = "teste"
+  name = "riquellme"
   imgSrc = ""
-  description = "teste teste teste"
+  description = "5º semestre"
   />
-  <StuedentProfile/>
+  <StuedentProfile
+  name = "Teste"
+  imgSrc = ""
+  desciption = "5"
+  />
   <StuedentProfile/>
 </div>
 
