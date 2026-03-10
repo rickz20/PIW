@@ -1,10 +1,10 @@
 import "./StudentProfile.css";
 
-const StuedentProfile = () =>
+const StuedentProfile = (props) =>
 
     <div className="student-card">
         <div className="student-title">
-            <h2>Riquellme Ferreira</h2>
+            <h2>{props.name}</h2>
         </div>
         <div className="student-picture">
             <img src="https://tse3.mm.bing.net/th/id/OIP.B8yX4bQ6QjJ0uQ6TUj9iMgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" 

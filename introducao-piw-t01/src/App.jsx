@@ -3,7 +3,11 @@ import StuedentProfile from "./components/sutdentProfile";
 
 const App = () => 
 <div className="container">
-  <StuedentProfile/>
+  <StuedentProfile
+  name = "teste"
+  imgSrc = ""
+  description = "teste teste teste"
+  />
   <StuedentProfile/>
   <StuedentProfile/>
 </div>
