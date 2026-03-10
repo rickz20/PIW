@@ -1,20 +1,28 @@
 import "./App.css";
 import StuedentProfile from "./components/sutdentProfile";
+import StudentProfileList from "./components/StudentProfileList";
+
 
 const App = () => 
-<div className="container">
-  <StuedentProfile
-  name = "riquellme"
-  imgSrc = ""
-  description = "5º semestre"
-  />
-  <StuedentProfile
-  name = "Teste"
-  imgSrc = ""
-  desciption = "5"
-  />
-  <StuedentProfile/>
-</div>
+  <>
+    <StudentProfileList/>
+  </>
+
+
+// const App = () => 
+// <div className="container">
+//   <StuedentProfile
+//   name = "riquellme"
+//   imgSrc = ""
+//   description = "5º semestre"
+//   />
+//   <StuedentProfile
+//   name = "Teste"
+//   imgSrc = ""
+//   description = "5"
+//   />
+//   <StuedentProfile/>
+// </div>
 
 // function App(){
 //   return(
