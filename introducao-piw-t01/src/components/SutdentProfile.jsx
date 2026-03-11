@@ -1,15 +1,15 @@
 import "./StudentProfile.css";
 
-const StuedentProfile = ({name, imgSrc, description}) =>
+const StuedentProfile = ({name, imgSrc, monitor, description}) =>
 
-    <div className="student-card">
+    <div className="student-card" style={monitor?{backgroundColor: "#18033e"}:{backgroundColor: "red"}}>
         <div className="student-title">
             <h2>{name}</h2>
         </div>
         <div className="student-picture">
-            <img src="" 
+            <img src={imgSrc} 
             alt="Picture student" 
-            width={150}
+            width={80}
             />
         </div>
         <div className="student-description">

@@ -4,9 +4,9 @@ import StudentProfileList from "./components/StudentProfileList";
 
 
 const App = () => 
-  <>
+  <div className="container">
     <StudentProfileList/>
-  </>
+  </div>
 
 
 // const App = () => 
