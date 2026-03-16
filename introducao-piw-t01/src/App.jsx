@@ -1,11 +1,16 @@
 import "./App.css";
 import StuedentProfile from "./components/sutdentProfile";
 import StudentProfileList from "./components/StudentProfileList";
+import TeacherProfileList from "./components/TeacherProfileList";
 
 
 const App = () => 
-  <div className="container">
-    <StudentProfileList/>
+  <div>
+    <h1 className="tituloPagina">Professores da Universidade Federal do Ceará</h1>
+    <div className="container">
+    {/* <StudentProfileList/> */}
+    <TeacherProfileList/>
+  </div>
   </div>
 
 
