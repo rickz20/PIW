@@ -1,17 +1,12 @@
-import "./App.css";
-import StuedentProfile from "./components/sutdentProfile";
-import StudentProfileList from "./components/StudentProfileList";
-import TeacherProfileList from "./components/TeacherProfileList";
+import PokemonPages from "./components/aula 03/pokemonPages";
 
 
 const App = () => 
-  <div>
-    <h1 className="tituloPagina">Professores da Universidade Federal do Ceará</h1>
-    <div className="container">
-    {/* <StudentProfileList/> */}
-    <TeacherProfileList/>
-  </div>
-  </div>
+
+    <div className="containter">
+      <PokemonPages/>
+    </div>
+
 
 
 // const App = () => 
