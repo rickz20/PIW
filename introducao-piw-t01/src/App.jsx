@@ -1,10 +1,11 @@
 import PokemonPages from "./components/aula 03/pokemonPages";
 
+import FormularioAluno from "./components/aula 04/FormularioAluno"
 
 const App = () => 
 
     <div className="containter">
-      <PokemonPages/>
+      <FormularioAluno/>
     </div>
 
 
