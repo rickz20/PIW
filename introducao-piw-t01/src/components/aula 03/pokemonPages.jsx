@@ -3,19 +3,22 @@ import { useState } from "react";
 const PokemonPages = () => {
 
 
-    const [pokemonId, setPokemonId] = useState(700)
+  const [pokemonId, setPokemonId] = useState(700)
 
-    const voltandoPokemon = () => {
+  const voltarPokemon = () => {
+    //alert("Voltando o pokemon"+nome)
+    if(pokemonId - 1 > 0) 
+      setPokemonId((estadoAnteriorPokemonId) => estadoAnteriorPokemonId - 1)
+      //setPokemonId(pokemonId - 1)
+      //pokemonId = pokemonId - 1
+      
+  }
 
-        if (pokemonId -1 > 0) {
-            setPokemonId(pokemonId -1)
-        }
-    }
-
-    const adiatandoPokemon = () => {
-        setPokemonId(pokemonId +1)
-
-    }
+  const adiantarPokemon = () => {
+    if(pokemonId + 1 <= 30)
+      setPokemonId((estadoAnteriorPokemonId) => estadoAnteriorPokemonId + 1)
+      //setPokemonId(pokemonId + 1)
+  }
 
   return (
     <>
@@ -31,14 +34,17 @@ const PokemonPages = () => {
       </nav>
       <main style={{ paddingTop: 50 }}>
         <div className="card" style={{ width: "18rem", paddingTop: "20px" }}>
-          <img
-            style={{ width: "200px" }}
-            src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/" + pokemonId + ".svg"}
-            className="card-img-top"
-            alt="Pokemon"
-          />
+          <div style={{textAlign:"center"}}>
+            <img
+              style={{ width: "200px"}}
+              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemonId}.svg`}
+              className="card-img-top"
+              alt="Pokemon"
+              
+            />
+          </div>
           <div className="card-body">
-            <h5 className="card-title">Nome do Pokemon</h5>
+            <h5 className="card-title">Nome do Pokemon: {pokemonId} </h5>
             <p className="card-text" style={{ textAlign: "justify" }}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
               aperiam, quaerat natus fugit atque, ullam nisi, quae est similique
@@ -46,9 +52,9 @@ const PokemonPages = () => {
               error dolor cupiditate?
             </p>
           </div>
-          <div>
-            <button className="btn btn-primary" onClick={voltandoPokemon}>Diminuir</button>
-            <button className="btn btn-primary" onClick={adiatandoPokemon}>Acrescentar</button>
+          <div style={{display:"flex", justifyContent:"space-evenly", paddingBottom:"10px"}}>
+            <button className="btn btn-primary" onClick={voltarPokemon}>Diminuir</button>
+            <button className="btn btn-primary" onClick={adiantarPokemon}>Acrescentar</button>
           </div>
         </div>
       </main>

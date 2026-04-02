@@ -5,7 +5,7 @@ import FormularioAluno from "./components/aula 04/FormularioAluno"
 const App = () => 
 
     <div className="containter">
-      <FormularioAluno/>
+      <PokemonPages/>
     </div>
 
 
