@@ -1,11 +1,13 @@
-import PokemonPages from "./components/aula 03/pokemonPages";
-
-import FormularioAluno from "./components/aula 04/FormularioAluno"
+import "./App.css";
+import CardCidade from "./components/atividades/Atvd 01/CardCidade";
 
 const App = () => 
 
     <div className="containter">
-      <PokemonPages/>
+      <CardCidade/>
+      <CardCidade/>
+      <CardCidade/>
+      <CardCidade/>
     </div>
 
 
