@@ -1,18 +1,17 @@
-const express = require("express")
+const express = require("express");
 const path = require("path");
 
+const ProfessorRouter = require("./routers/ProfessorRouter");
+const AlunoRouter = require("./routers/AlunoRouter");
 
-const ProfesorRouter = require("./routers/ProfessorRouter");
+const app = express();
+const port = 3000;
 
-const app = express()
-const port = 3000
+app.use(express.static(path.join(__dirname, "..", "public")));
 
-app.use(express.static(path.join(__dirname, "..", "public")))
-app.use("/api/piwt01",ProfesorRouter)
+app.use("/api/piwt01/professor", ProfessorRouter);
+app.use("/api/piwt01/aluno", AlunoRouter);
 
-app.listen(
-    port,
-    () => {
-        console.log(`API executando em http://localhost${port}/api/piwt01/professor`)
-    }
-)
+app.listen(port, () => {
+    console.log(`Rodando em http://localhost:${port}/api/piwt01/aluno`);
+});
