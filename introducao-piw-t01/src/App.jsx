@@ -1,15 +1,12 @@
 import "./App.css";
-import CardCidade from "./components/atividades/Atvd 01/CardCidade";
 
+//import { CompA } from "./components/aula07/useContext/CompA";
+import EstudoDoRef from "./components/aula07/useRef/EstudoDoRef";
 const App = () => 
 
     <div className="containter">
-      <CardCidade/>
-      <CardCidade/>
-      <CardCidade/>
-      <CardCidade/>
+      <EstudoDoRef/>
     </div>
-
 
 
 // const App = () => 
