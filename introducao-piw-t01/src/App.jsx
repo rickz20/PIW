@@ -1,11 +1,11 @@
-import "./App.css";
+// import "./App.css";
 
 //import { CompA } from "./components/aula07/useContext/CompA";
-import EstudoDoRef from "./components/aula07/useRef/EstudoDoRef";
+import RevisaoRef from "./components/aula07/useRef/RevisaoRef";
 const App = () => 
 
     <div className="containter">
-      <EstudoDoRef/>
+      <RevisaoRef/>
     </div>
 
 
