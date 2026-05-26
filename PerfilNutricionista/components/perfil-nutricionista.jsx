@@ -7,7 +7,7 @@ const PerfilNutricionista = ({nome, especializacao, sobre, telefone, email, CRNn
         <>
             <div className="container">
                 <div className="img-nutricionista">
-                    <img src="../assets/images/nutri.jpg" alt="" />
+                    <img src="https://drive.google.com/file/d/1apVnuLQbX7SS1GQgGSr17ZKmVxxV-M76/view?usp=sharing" alt="" />
                 </div>
                 <div className="infos-nutricionista">
                     <h2>{nome}</h2>

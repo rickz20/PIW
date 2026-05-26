@@ -1,28 +1,38 @@
-import "../styles/navbar.css"
+import { ArrowLeft, Home, Users, User } from 'lucide-react';
+import "../styles/navbar.css";
+
 const NavBar = () => {
     return (
         <nav className="navbar">
             <div id="voltar">
-                <img src="../assets/images/Arrow left.png" alt="iconeVoltar" />
+                {/* Substituído por ArrowLeft */}
+                <ArrowLeft size={24} className="icon" />
                 <p>nutricionistas</p>
             </div>
+            
             <img src="" alt="Logo" />
+            
             <div id="acoes">
                 <div id="inicio">
-                    <img src="../assets/images/Home.png" alt="iconeCasa" />
+                    {/* Substituído por Home */}
+                    <Home size={20} className="icon" />
                     <p>Início</p>
                 </div>
-                    <div id="nutricionistas">
-                        <img src="../assets/images/Users.png" alt="iconeNutricionistas" />
-                        <p>nutricionistas</p>
-                    </div>
-                    <div id="perfil">
-                        <img src="../assets/images/User.png" alt="iconeNutri" />
-                        <p>Perfil</p>
-                    </div>
+                
+                <div id="nutricionistas">
+                    {/* Substituído por Users */}
+                    <Users size={20} className="icon" />
+                    <p>nutricionistas</p>
+                </div>
+                
+                <div id="perfil">
+                    {/* Substituído por User */}
+                    <User size={20} className="icon" />
+                    <p>Perfil</p>
+                </div>
             </div>
         </nav>
-    )
+    );
 }
 
-export default NavBar
+export default NavBar;
