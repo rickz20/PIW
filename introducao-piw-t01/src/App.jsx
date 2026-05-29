@@ -1,11 +1,12 @@
 // import "./App.css";
 
 //import { CompA } from "./components/aula07/useContext/CompA";
-import RevisaoRef from "./components/aula07/useRef/RevisaoRef";
+// import RevisaoRef from "./components/aula07/useRef/RevisaoRef";
+import ProfessorDAO from "./components/app_universidade_qx/dao/professorDAO";
 const App = () => 
 
     <div className="containter">
-      <RevisaoRef/>
+      <ProfessorDAO/>
     </div>
 
 
